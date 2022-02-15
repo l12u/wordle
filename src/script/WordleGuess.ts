@@ -38,6 +38,7 @@ export class WordleGuess {
 
         for (let i = 0; i < this.slots.length; i++) {
             const slot = this.slots.find((s) => s.position === i)!;
+            slot.isLocked = false;
 
             occurrences[slot.letter] = (occurrences[slot.letter] || 0) + 1;
 
