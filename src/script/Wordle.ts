@@ -56,6 +56,8 @@ export class Wordle {
             }
         }
 
+        pattern += `\n\n ${window.location.href}`;
+
         await navigator.clipboard.writeText(pattern);
     }
 
